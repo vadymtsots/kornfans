@@ -15,18 +15,11 @@
 <body>
 
 <header class="header">
-    <a class="logo" href="/">
-        <h1>KORNFANS</h1>
-    </a>
+    <?php require_once("templates/header.php")?>
 </header>
 
 <aside>
-    <ul>
-        <li><a href="#">History</a></li>
-        <li><a href="#">Discography</a></li>
-        <li><a href="#">Members</a></li>
-        <li><a href="#">Reviews</a></li>
-    </ul>
+    <?php require_once("templates/sidebar.php")?>
 </aside>
 
 <section class="content">
@@ -39,10 +32,12 @@
         Reginald "Fieldy" Arvizu (bass), Brian "Head" Welch (lead guitar, backing vocals), and Jonathan Davis (lead vocals, bagpipes),
         with the addition of Ray Luzier (drums) in 2007, replacing the band's first drummer, David Silveria.
     </p>
+
+    <img src="resources/korn-1999-u-billboard-1548-compressed.jpg" alt="Band image">
 </section>
 
 <footer>
-    <p>Created by Tsots</p>
+    <?php require_once("templates/footer.php")?>
 </footer>
 
 </body>

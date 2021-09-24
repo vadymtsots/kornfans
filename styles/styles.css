@@ -42,6 +42,14 @@ footer{
     text-align: center;
 }
 
+img{
+    width: 55%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .header{
     text-align: center;
     border-bottom: solid grey 2px;
