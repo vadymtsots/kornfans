@@ -1,0 +1,65 @@
+body{
+    background-color: azure;
+}
+
+
+
+ul{
+    list-style-type: none;
+
+}
+
+aside{
+    overflow-x: hidden;
+    padding-top: 20px;
+    position: fixed;
+    z-index: 1;
+    width: 200px;
+    background-color: darkgrey;
+    height: 100%;
+}
+
+li{
+    font-family: "Verdana", "Times New Roman", sans-serif;
+    font-size: large;
+    padding: 5px;
+    font-weight: bold;
+
+
+}
+
+li a{
+    text-decoration: none;
+    color: darkblue;
+}
+
+footer{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    color: darkblue;
+    text-align: center;
+}
+
+.header{
+    text-align: center;
+    border-bottom: solid grey 2px;
+
+}
+
+.logo{
+    text-decoration: none;
+    color: darkblue;
+    font-family: "Verdana", "Times New Roman", sans-serif;
+}
+
+.content{
+    font-family: "Verdana", "Times New Roman", serif;
+    font-size: medium;
+    font-weight: normal;
+    margin-left: 210px;
+}
+
+
+
