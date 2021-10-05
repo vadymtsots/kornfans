@@ -19,4 +19,12 @@
     <a class="logo" href="/?action=main">
         <h1>KORNFANS</h1>
     </a>
+
+    <nav class="navigation">
+        <a class="link" href="#">
+            Sign in
+        </a>
+
+        <a class="link" href="/?action=registration">Register</a>
+    </nav>
 </header>
