@@ -1,5 +1,9 @@
 <?php
 
+    $countriesJson = file_get_contents('resources/countries.json');
+    $countriesArray = json_decode($countriesJson, true);
+    $countries = array_column($countriesArray, "name", "code");
+
     $errors =
         [
             'login' => '',
@@ -25,9 +29,6 @@
         }
         if(empty($_POST['email']) || !preg_match("/^[a-zA-Z0-9\.\-_]{2,}@[a-zA-Z0-9\-_]+\.[a-z]{2,3}$/", $_POST['email'])){
             $errors['email'] = "Incorrect email pattern!";
-        }
-        if(empty($_POST['country']) || !preg_match("/[A-Z{2}]/", $_POST['country'])){
-            $errors['country'] = "Incorrect country code pattern!";
         }
         if(empty($_POST['pass']) || !preg_match("/[a-zA-Z0-9_\-]{4,}/", $_POST['pass'])){
             $errors['pass'] = "Incorrect password pattern!";
@@ -60,7 +61,12 @@
         <div class="error"> <?= $errors['email'] ?> </div>
 
         <label for="country">Country</label>
-        <input type="text" name="country" id="country"> <br />
+        <select name="country" id="country">
+            <?php
+            foreach($countries as $code => $name){ ?>
+                <option value=<?php echo $code?>> <?php echo $name?> </option>
+            <?php } ?>
+        </select>
         <div class="error"> <?= $errors['country'] ?> </div>
 
         <label for="pass">Password</label>
@@ -72,6 +78,11 @@
         <div class="error"> <?= $errors['pass_confirm'] ?> </div>
 
         <input type="submit" class="submit" id="submit" name="submit" value="Register">
+
+        <p class="content">
+
+
+        </p>
 
     </form>
 

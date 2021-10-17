@@ -78,6 +78,10 @@ input{
 
 }
 
+select{
+    width: 150px;
+}
+
 .header{
     text-align: center;
     border-bottom: solid grey 2px;
