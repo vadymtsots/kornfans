@@ -137,6 +137,10 @@ input{
     margin-right: auto;
 }
 
+.error{
+    color: red;
+}
+
 
 
 
